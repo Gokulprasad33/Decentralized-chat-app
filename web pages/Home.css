@@ -9,35 +9,36 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+
+
 }
 
 .sidebar {
     height: 100vh; 
     width: 10vh; 
     position:relative;
-    background-color: #0F67B1; 
+    background-color: #272829; 
     padding-left: 20px;
     padding-top: 25px;   
     padding:20px;
     display: flex;
     flex-direction: column;
-
- 
-    
+    border-right:1px solid rgb(80, 76, 76);
 }
 .sidebar a{
     text-decoration: none;
 }
 
 .sidebar h2 {
-    color: white;
+    color: #D8D9DA;
     font-size: 20px;
     
 }
 
 h2:hover{
-    background-color: #96C9F4;
-    border-radius: 5px;
     color:black;
 }
 
@@ -46,7 +47,7 @@ h2:hover{
     width: 75px;
 }
 .chatbar{
-    background-color: #96C9F4;
+    background-color: #272829;
     height: 100vh; 
     width: 20vh; 
     position:relative;
@@ -55,7 +56,16 @@ h2:hover{
     padding:20px;
     display: flex;
     flex-direction: column;
+    
 
+}
+.friend-list{
+    padding: 20px;
+    border-radius: 10px;
+    height: 800px; 
+    overflow-y:auto;
+    background-color: transparent;
+    padding-left: 0px;
 }
 .friend-list button{
     width: 100%;
@@ -66,6 +76,53 @@ h2:hover{
     display: flex;
     align-items: center;
     position: relative;
+    
 
 
+}
+.friend-list button:hover {
+    background-color: #61677A;
+    border-radius: 10px;
+    width: auto;
+}
+
+.friend-list img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    outline: invert;
+    border: 1px solid white;
+}
+
+.text {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.friend-list::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px; 
+}
+
+.friend-list::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+.friend-list::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.friend-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.chatbar-container h1{
+    color: white;
+}
+canvas {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height:50px;
 }
